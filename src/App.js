@@ -6,9 +6,14 @@ export const audioContext = new AudioContext()
 
 function App() {
   return (
-    <div className="App">
-      <Tape/>
-      <Settings/>
+    <div className="Tracklist-Producer">
+      <div className='main-title'>
+        <h1>Tracklist (Producer)</h1>
+      </div>
+      <div className='App'>
+        <Tape/>
+        <Settings/>
+      </div>
     </div>
   );
 }
