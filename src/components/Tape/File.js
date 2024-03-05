@@ -38,9 +38,10 @@ const handleFile = async (e, context) => {
     });
 
     context.setPlay(false)
-    if (audioContext.audioBuffer){
+    try {
         audioContext.stop()
-    }
+    } catch (e) {}
+
 }
 
 function File(){
