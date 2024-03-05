@@ -17,7 +17,7 @@ function Tape(){
     const values = {audio, setAudio, title, setTitle, image, setImage, isPlay, setPlay, isLoop, setLoop}
 
     return(
-        <div>
+        <div className="tape">
             <MetadataContext.Provider 
                 value={values}>
                     <div>
