@@ -19,8 +19,8 @@ const handlePlayPause = (context) => {
 function PlayPause(){
     const context = useContext(MetadataContext)
     return(
-        <div>
-            {context.isPlay ? <button onClick={() => handlePlayPause(context)}>Pause</button> : <button onClick={() => handlePlayPause(context)}>Play</button>}
+        <div className="controls-buttons">
+            {context.isPlay ? <button onClick={() => handlePlayPause(context)}><div style={{backgroundImage: "url(./pause.png)"}}></div></button> : <button onClick={() => handlePlayPause(context)}><div style={{backgroundImage: "url(./play.png)"}}></div></button>}
         </div>
     )
 }

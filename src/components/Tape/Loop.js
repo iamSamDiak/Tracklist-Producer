@@ -15,8 +15,8 @@ const handleLoop = (context) => {
 function Loop(){
     const context = useContext(MetadataContext)
     return(
-        <div>
-            {context.isLoop ? <button onClick={() => handleLoop(context)}>Loop Off</button> : <button onClick={() => handleLoop(context)}>Loop On</button>}
+        <div className="controls-buttons">
+            {context.isLoop ? <button onClick={() => handleLoop(context)}><div style={{backgroundImage: "url(./loop-on-track.png)"}}></div></button> : <button onClick={() => handleLoop(context)}><div style={{backgroundImage: "url(./loop.png)"}}></div></button>}
         </div>
     )
 }
