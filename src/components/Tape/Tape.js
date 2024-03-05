@@ -4,6 +4,7 @@ import File from "./File"
 import PlayPause from "./PlayPause"
 import Loop from "./Loop"
 import Timeline from "./Timeline"
+import Circle from "./Circle"
 import { createContext, useState } from 'react'
 
 export const MetadataContext = createContext(null)
@@ -20,14 +21,17 @@ function Tape(){
         <div className="tape">
             <MetadataContext.Provider 
                 value={values}>
-                    <div>
-                        <h1>Tape</h1>
-                    </div>
                     <Title/>
                     <Img/>
                     <File/>
-                    <PlayPause/>
-                    <Loop/>
+                    <div className="circle-container">
+                        <Circle/>
+                        <Circle/>
+                    </div>
+                    <div className="controls">
+                        <PlayPause/>
+                        <Loop/>
+                    </div>
                     <Timeline/>
             </MetadataContext.Provider>
         </div>

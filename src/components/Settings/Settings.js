@@ -9,7 +9,7 @@ export const Context = createContext(null)
 
 function Settings(){
     return(
-        <div>
+        <div className="settings">
             <Volume/>
             <Reverb/>
             <Pitch/>

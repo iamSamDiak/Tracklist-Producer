@@ -4,9 +4,8 @@ import { MetadataContext } from "./Tape.js";
 function Img(){
     const context = useContext(MetadataContext)
     return(
-        <div>
-            <p>Image</p>
-            {context.image ? <img width={300} src={context.image}/> : <img width={300} src="./cover.jpg"/>}
+        <div className="image-container">
+            {context.image ? <div className="image" style={{ backgroundImage: `url(${context.image}` }}></div> : <div className="image" style={{ backgroundImage: "url(./cover.jpg)" }}></div>}
         </div>
     )
 }
