@@ -125,6 +125,20 @@ body{
   transform: rotate(225deg);
 }
 
+.controls-buttons button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.controls-buttons div{
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .timeline-container {
   margin: 30px auto 0;
   position: relative;
