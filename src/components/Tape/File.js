@@ -48,7 +48,7 @@ function File(){
     const context = useContext(MetadataContext)
 
     return(
-        <div>
+        <div className="import-audio-file">
             <input type="file" onChange={(e) => handleFile(e, context)}/>
         </div>
     )

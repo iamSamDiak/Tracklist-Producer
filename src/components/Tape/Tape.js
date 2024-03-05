@@ -24,13 +24,11 @@ function Tape(){
                     <Title/>
                     <Img/>
                     <File/>
-                    <div className="circle-container">
-                        <Circle/>
-                        <Circle/>
-                    </div>
                     <div className="controls">
+                        <Circle/>
                         <PlayPause/>
                         <Loop/>
+                        <Circle/>
                     </div>
                     <Timeline/>
             </MetadataContext.Provider>
