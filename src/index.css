@@ -8,11 +8,26 @@ html, body, #root{
   height: 100%;
 }
 
+.Tracklist-Producer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
 .App{
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
 }
 
 .tape{
