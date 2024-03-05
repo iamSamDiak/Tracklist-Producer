@@ -17,12 +17,9 @@ const setTimeline = (context) => {
     req = requestAnimationFrame(() => setTimeline(context))
 }
 
-const handleInput = (e) => {
-    console.log("on it!")
-}
+const handleInput = (e) => {}
 
 const handleMouseDown = () => {
-    console.log("on")
     const timeline = document.querySelector(".timeline")
     const timeline2 = document.querySelector(".timeline-2")
     timeline.style.display = "none"
@@ -30,10 +27,9 @@ const handleMouseDown = () => {
 }
 
 const handleMouseUp = (e, context) => {
-    console.log("on ittt!")
     const timeline = document.querySelector(".timeline")
     const timeline2 = document.querySelector(".timeline-2")
-    const secondsSetAt = (audioContext.audioDuration) * (timeline.value/100)
+    const secondsSetAt = (audioContext.audioDuration) * (e.target.value/100)
     audioContext.play(secondsSetAt)
     if (!context.isPlay && audioContext.audioBuffer){
         context.setPlay(true)
