@@ -19,8 +19,8 @@ function Lowpass(){
     return(
         <div>
             <p>Lowpass</p>
-            <input type="range" className="lowpass" onChange={handleLowpass} min="0" max="100" value={currentLowpass}/>
-            <button onClick={reset}>Réinitialiser</button>
+            <input type="range" className="lowpass slider-effect" onChange={handleLowpass} min="0" max="100" value={currentLowpass}/>
+            <button onClick={reset}>Reset</button>
         </div>
     )
 }

@@ -18,8 +18,8 @@ function Pitch(){
     return(
         <div>
             <p>Pitch</p>
-            <input type="range" className="pitch" onChange={handlePitch} min="0" max="100" value={currentPitch}/>
-            <button onClick={reset}>Réinitialiser</button>
+            <input type="range" className="pitch slider-effect" onChange={handlePitch} min="0" max="100" value={currentPitch}/>
+            <button onClick={reset}>Reset</button>
         </div>
     )
 }

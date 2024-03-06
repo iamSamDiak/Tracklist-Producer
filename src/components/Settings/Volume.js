@@ -19,8 +19,8 @@ function Volume(){
     return(
         <div>
             <p>Volume</p>
-            <input type="range" className="volume" onChange={handleVolume} min="0" max="100" value={currentVolume}/>
-            <button onClick={reset}>Réinitialiser</button>
+            <input type="range" className="volume slider-effect" onChange={handleVolume} min="0" max="100" value={currentVolume}/>
+            <button onClick={reset}>Reset</button>
         </div>
     )
 }

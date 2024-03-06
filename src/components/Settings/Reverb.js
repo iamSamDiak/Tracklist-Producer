@@ -18,8 +18,8 @@ function Reverb(){
     return(
         <div>
             <p>Reverb</p>
-            <input type="range" className="reverb" onChange={handleReverb} min="0" max="100" value={currentReverb}/>
-            <button onClick={reset}>Réinitialiser</button>
+            <input type="range" className="reverb slider-effect" onChange={handleReverb} min="0" max="100" value={currentReverb}/>
+            <button onClick={reset}>Reset</button>
         </div>
     )
 }
