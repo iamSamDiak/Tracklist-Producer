@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://i.ibb.co/QjSHzMX/tracklist-producer.png" style="width:50%">
+    <img src="https://i.ibb.co/qBW52nt/tracklist-producer.png" style="width:50%">
 </div>
 
 ---
