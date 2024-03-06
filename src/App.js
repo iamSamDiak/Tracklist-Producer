@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="Tracklist-Producer">
       <div className='main-title'>
-        <h1>Tracklist (Producer)</h1>
+        <h1>Tracklist - Producer</h1>
       </div>
       <div className='App'>
         <Tape/>
