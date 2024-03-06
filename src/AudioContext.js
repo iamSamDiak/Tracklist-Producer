@@ -90,7 +90,7 @@ export default class AudioContext {
 
         this.setConvolver(audioSource);
 
-        audioSource.start(0, this.currentTime);
+        audioSource.start(0, startAt);
         audioSource.playbackRate.value = this.audioSource.playbackRate.value;
         
         this.audioSource = audioSource
