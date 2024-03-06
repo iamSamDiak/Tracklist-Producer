@@ -1,11 +1,11 @@
 <div align="center">
-    <img src="https://i.ibb.co/QjSHzMX/tracklist.png" style="width:50%">
+    <img src="https://i.ibb.co/QjSHzMX/tracklist-producer.png" style="width:50%">
 </div>
 
 ---
 
 <div  align="center"  style="display:flex;justify-content:center">
-    <img  src="https://i.ibb.co/hLG5qdm/tracklist-producer-web.png"  style="width:30%">
+    <img  src="https://i.ibb.co/hLG5qdm/tracklist-producer-web.png"  style="width:70%">
 </div>
 
 
