@@ -211,13 +211,28 @@ body{
   cursor: pointer;
 }
 
-.settings{
+.settings {
   width: 35%;
   min-width: 300px;
   max-width: 700px;
   background-color: #cfcfcf;
-  padding: 48px;
+  padding: 26px;
   border-radius: 17px;
+}
+
+.settings div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.settings button {
+  padding: 15px;
+  background: #313131;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
 }
 
 .tape, .settings{
