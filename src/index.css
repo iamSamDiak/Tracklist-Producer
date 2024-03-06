@@ -10,7 +10,7 @@ html, body, #root{
 
 body{
   background-color: #e4e4e4;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Tracklist-Producer{
@@ -27,7 +27,7 @@ body{
   align-items: center;
   margin: 20px;
   font-weight: 700;
-  letter-spacing: -2px;
+  letter-spacing: -2px; 
 }
 
 .App{
@@ -237,7 +237,7 @@ body{
 
 .slider-effect{
   -webkit-appearance: none;
-  width: 100%;
+  width: 50%;
   height: 1px;
   background: #000;
   outline: none;
