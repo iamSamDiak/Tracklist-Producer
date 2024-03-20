@@ -49,7 +49,7 @@ function File(){
 
     return(
         <div className="import-audio-file">
-            <input type="file" onChange={(e) => handleFile(e, context)}/>
+            <input type="file" onChange={(e) => handleFile(e, context)} accept="audio/mp3" />
         </div>
     )
 }
