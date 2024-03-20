@@ -15,9 +15,11 @@
 
 **Tracklist Producer** is a simple web app built with **React** that allows you to load music and play with different effects : Reverb, Pitch, Lowpass.
 
+https://tracklist-producer.netlify.app/
+
 ## 
 
-### How to use it
+### How to install it
 
 - #### Development Setup
 
@@ -30,5 +32,9 @@
 	Then run:
 	
 	`npm start`
+
+	Go to:
+	
+	`localhost:3000`
 	
 	Done. **Enjoy!**
