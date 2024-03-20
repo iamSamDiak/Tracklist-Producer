@@ -43,7 +43,6 @@ export default class AudioContext {
         this.currentTime = startAt
         this.interval = setInterval(()=>{
             this.currentTime = this.currentTime + (this.playback + 1.0)
-            console.log(this.currentTime + (this.playback + 1.0))
             if (this.currentTime >= this.audioDuration){
                 clearInterval(this.interval)
                 this.interval = null
@@ -56,7 +55,7 @@ export default class AudioContext {
         }, 1000)
     }
 
-    getArrayBuffer(track){
+    async getArrayBuffer(track){
         if (this.currentTime > 0){
             clearInterval(this.interval)
         }
@@ -74,6 +73,7 @@ export default class AudioContext {
             this.audioDuration = this.audioBuffer.duration
         })
         .catch(err => console.error("Error :", err))
+
     }
 
     play(startAt = 0){

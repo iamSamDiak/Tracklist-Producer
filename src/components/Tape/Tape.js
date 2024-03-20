@@ -5,7 +5,7 @@ import PlayPause from "./PlayPause"
 import Loop from "./Loop"
 import Timeline from "./Timeline"
 import Circle from "./Circle"
-import { createContext, useState } from 'react'
+import { createContext, useRef, useState, useEffect } from 'react'
 
 export const MetadataContext = createContext(null)
 
@@ -15,7 +15,13 @@ function Tape(){
     const [image, setImage] = useState(null)
     const [isPlay, setPlay] = useState(false)
     const [isLoop, setLoop] = useState(false)
-    const values = {audio, setAudio, title, setTitle, image, setImage, isPlay, setPlay, isLoop, setLoop}
+    const playButton = useRef(null)
+    const values = {audio, setAudio, title, setTitle, image, setImage, isPlay, setPlay, isLoop, setLoop, playButton}
+    
+    useEffect(() => {
+        playButton.current = document.querySelectorAll(".controls-buttons button")[0]
+    }, [])
+
 
     return(
         <div className="tape">

@@ -19,7 +19,7 @@ const handleFile = async (e, context) => {
     const url_audio = URL.createObjectURL(file)
     context.setAudio(url_audio)
     jsmediatags.read(file, {
-        onSuccess: function(tag) {
+        onSuccess: async function(tag) {
             const title = tag.tags.title ? `${tag.tags.title} - ${tag.tags.artist}` : file.name
             if (tag.tags.title){
                 const { data, format } = tag.tags.picture;
@@ -29,8 +29,16 @@ const handleFile = async (e, context) => {
                 context.setImage(null)
             }
 
-            context.setTitle(title)
-            audioContext.getArrayBuffer(url_audio)
+            context.setTitle("Chargement...")
+            context.playButton.current.classList.add("disable")
+            context.playButton.current.disabled = true
+            await audioContext.getArrayBuffer(url_audio)
+            setTimeout(() => {
+                context.playButton.current.classList.remove("disable")
+                context.playButton.current.disabled = false
+                context.setTitle(title)
+            }, 1000)
+
         },
         onError: function(error) {
           console.log(error.type, error.info);
@@ -38,6 +46,7 @@ const handleFile = async (e, context) => {
     });
 
     context.setPlay(false)
+
     try {
         audioContext.stop()
     } catch (e) {}
